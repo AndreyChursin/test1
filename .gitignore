@@ -1,0 +1,38 @@
+# Node.js зависимости
+node_modules/
+
+# PHP зависимости, установленные через Composer
+/vendor/
+
+# Скомпилированные файлы (бандлы, сборка)
+dist/
+
+# Файлы конфигурации окружения (если используются)
+.env
+.env.*
+
+# Логи и временные файлы
+*.log
+*.cache
+*.tmp
+
+# Файлы сессий, дампы и т.п.
+*.swp
+*.swo
+
+# Файлы кэша
+cache/
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
+
+# Файлы IDE и редакторов
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Docker файлы, если они не нужны в репозитории (если хотите, можете оставить Dockerfile и docker-compose.yml)
+docker-compose.override.yml

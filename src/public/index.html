@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Триангуляция точки</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="dist/styles.css">
+        <script src="dist/script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Триангуляция точки</h1>
+            <form id="triangulationForm">
+                <fieldset class="mb-4">
+                    <legend class="h5">Опорные точки и расстояния</legend>
+
+                    <!-- Точка 1 -->
+                    <div class="row mb-3 align-items-end">
+                        <div class="col-12 mb-2"><strong>Точка 1</strong></div>
+                        <div class="col-md-4">
+                            <label for="point1-lat"
+                                class="form-label">Широта</label>
+                            <input type="number" id="point1-lat"
+                                name="point1-lat" class="form-control"
+                                placeholder="Введите широту" step="any"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="point1-lon"
+                                class="form-label">Долгота</label>
+                            <input type="number" id="point1-lon"
+                                name="point1-lon" class="form-control"
+                                placeholder="Введите долготу" step="any"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="distance1"
+                                class="form-label">Расстояние</label>
+                            <input type="number" id="distance1" name="distance1"
+                                class="form-control" placeholder="0"
+                                step="any" required>
+                        </div>
+                    </div>
+
+                    <!-- Точка 2 -->
+                    <div class="row mb-3 align-items-end">
+                        <div class="col-12 mb-2"><strong>Точка 2</strong></div>
+                        <div class="col-md-4">
+                            <label for="point2-lat"
+                                class="form-label">Широта</label>
+                            <input type="number" id="point2-lat"
+                                name="point2-lat" class="form-control"
+                                placeholder="Введите широту" step="any"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="point2-lon"
+                                class="form-label">Долгота</label>
+                            <input type="number" id="point2-lon"
+                                name="point2-lon" class="form-control"
+                                placeholder="Введите долготу" step="any"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="distance2"
+                                class="form-label">Расстояние</label>
+                            <input type="number" id="distance2" name="distance2"
+                                class="form-control" placeholder="0"
+                                step="any" required>
+                        </div>
+                    </div>
+
+                    <!-- Точка 3 -->
+                    <div class="row mb-3 align-items-end">
+                        <div class="col-12 mb-2"><strong>Точка 3</strong></div>
+                        <div class="col-md-4">
+                            <label for="point3-lat"
+                                class="form-label">Широта</label>
+                            <input type="number" id="point3-lat"
+                                name="point3-lat" class="form-control"
+                                placeholder="Введите широту" step="any"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="point3-lon"
+                                class="form-label">Долгота</label>
+                            <input type="number" id="point3-lon"
+                                name="point3-lon" class="form-control"
+                                placeholder="Введите долготу" step="any"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="distance3"
+                                class="form-label">Расстояние</label>
+                            <input type="number" id="distance3" name="distance3"
+                                class="form-control" placeholder="0"
+                                step="any" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary w-100">Рассчитать
+                    координаты</button>
+            </form>
+            <div class="result" id="result"></div>
+        </div>
+    </body>
+</html>
